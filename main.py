@@ -45,41 +45,45 @@ while True:
         print("5.EXIT")
         print("--------------------------")
         choice = input("WHICH SHAPE DO YOU WANT")
-        if choice == '1':
-            print(" YOU CHOOSE CIRCLE")
-            r = int(input("Enter circle's radius length: "))
-            pi = 3.14
-            circle_area = pi * r * r
-            print(f"The area of circle is {circle_area}.")
-            print("--------------------------------------")
+        while True:
+            if choice == '1':
+                print(" YOU CHOOSE CIRCLE")
+                r = int(input("Enter circle's radius length: "))
+                pi = 3.14
+                circle_area = pi * r * r
+                print(f"The area of circle is {circle_area}.")
+                print("--------------------------------------")
+                input("DO YOU WANT TO CONTINUE")
+                #continue
 
-        elif choice == '2':
-            print("YOU CHOOSE SQUARE")
-            s = int(input("Enter square's side length: "))
-            square_area = s * s
-            print(f"The area of square is {square_area}. ")
-            print("--------------------------------------")
+            elif choice == '2':
+                print("YOU CHOOSE SQUARE")
+                s = int(input("Enter square's side length: "))
+                square_area = s * s
+                print(f"The area of square is {square_area}. ")
+                print("--------------------------------------")
 
-        elif choice == '3':
-            print("YOU CHOOSE RECTANGLE")
-            l = int(input("Enter rectangle's length: "))
-            b = int(input("Enter rectangle's breadth: "))
-            rectangle_area = l * b
-            print(f"The area of rectangle is {rectangle_area}.")
-            print("------------------------------------------")
+            elif choice == '3':
+                print("YOU CHOOSE RECTANGLE")
+                l = int(input("Enter rectangle's length: "))
+                b = int(input("Enter rectangle's breadth: "))
+                rectangle_area = l * b
+                print(f"The area of rectangle is {rectangle_area}.")
+                print("------------------------------------------")
 
 
-        elif choice == '4':
-            print("YOU CHOOSE TRIANGLE")
-            h = int(input("Enter triangle's height: "))
-            b = int(input("Enter triangle's breadth: "))
-            triangle_area = 0.5 * b * h
-            print(f"The area of triangle is {triangle_area}.")
-            print("-----------------------------------------")
+            elif choice == '4':
+                print("YOU CHOOSE TRIANGLE")
+                h = int(input("Enter triangle's height: "))
+                b = int(input("Enter triangle's breadth: "))
+                triangle_area = 0.5 * b * h
+                print(f"The area of triangle is {triangle_area}.")
+                print("-----------------------------------------")
 
-        elif choice == '5':
-            print("....YOU ARE EXITED.....")
-            break
+            elif choice == '5':
+                print("....YOU ARE EXITED.....")
+                break
+
 
     elif choice == '3':
         print("-----YOU ARE EXITED-----")
