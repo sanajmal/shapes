@@ -1,16 +1,87 @@
-# This is a sample Python script.
+choice = ""
+ch = ""
+while True:
+    print("---------SHAPE CALCULATIONS---------")
+    print("------------------------------------")
+    print("------------------------------------")
+    print("CHOOSE YOUR OPTIONS")
+    print("1.Perimeter")
+    print("2.Area")
+    print("3.Exit")
+    choice = input("SELECT YOUR CHOICE")
+    if choice == '1':
+        print("YOU CHOOSE PERIMETER")
+        print("-------------------------")
+        print(".....ENTER YOUR CHOICE....")
+        print("1.CIRCLE")
+        print("2.SQUARE")
+        print("3.RECTANGLE")
+        print("4.TRIANGLE")
+        print("5.EXIT")
+        print("--------------------------")
+        #con = input("...DO YOU WANT TO CONTINUE....")
+        #if con == "yes" or  con == "y" or con == "Y":
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+        ch = input("WHICH SHAPE DO YOU WANT")
+        if ch == '1':
+            print(" YOU CHOOSE CIRCLE")
+        elif ch == '2':
+            print("YOU CHOOSE SQUARE")
+        elif ch == '3':
+            print("YOU CHOOSE RECTANGLE")
+        elif ch == '4':
+            print("YOU CHOOSE TRIANGLE")
+        elif ch == '5':
+            print("....YOU ARE EXITED.....")
+            break
+    elif choice == '2':
+        print("you choose area")
+        print("-------------------------")
+        print(".....ENTER YOUR CHOICE....")
+        print("1.CIRCLE")
+        print("2.SQUARE")
+        print("3.RECTANGLE")
+        print("4.TRIANGLE")
+        print("5.EXIT")
+        print("--------------------------")
+        choice = input("WHICH SHAPE DO YOU WANT")
+        if choice == '1':
+            print(" YOU CHOOSE CIRCLE")
+            r = int(input("Enter circle's radius length: "))
+            pi = 3.14
+            circle_area = pi * r * r
+            print(f"The area of circle is {circle_area}.")
+            print("--------------------------------------")
+
+        elif choice == '2':
+            print("YOU CHOOSE SQUARE")
+            s = int(input("Enter square's side length: "))
+            square_area = s * s
+            print(f"The area of square is {square_area}. ")
+            print("--------------------------------------")
+
+        elif choice == '3':
+            print("YOU CHOOSE RECTANGLE")
+            l = int(input("Enter rectangle's length: "))
+            b = int(input("Enter rectangle's breadth: "))
+            rectangle_area = l * b
+            print(f"The area of rectangle is {rectangle_area}.")
+            print("------------------------------------------")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+        elif choice == '4':
+            print("YOU CHOOSE TRIANGLE")
+            h = int(input("Enter triangle's height: "))
+            b = int(input("Enter triangle's breadth: "))
+            triangle_area = 0.5 * b * h
+            print(f"The area of triangle is {triangle_area}.")
+            print("-----------------------------------------")
 
+        elif choice == '5':
+            print("....YOU ARE EXITED.....")
+            break
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    elif choice == '3':
+        print("-----YOU ARE EXITED-----")
+        print("------------------------")
+        break
