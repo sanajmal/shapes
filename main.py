@@ -25,15 +25,35 @@ while True:
         ch = input("WHICH SHAPE DO YOU WANT")
         if ch == '1':
             print(" YOU CHOOSE CIRCLE")
+            r = float(input("Input Radius : "))
+            perimeter = round(2 * 3.14 * r, 2)
+            print("Perimeter of Circle: ", perimeter)
+
         elif ch == '2':
             print("YOU CHOOSE SQUARE")
+            s = int(input("Side : "))
+            perimeter = 4 * s
+            print("Perimeter of square : ", perimeter)
+
         elif ch == '3':
             print("YOU CHOOSE RECTANGLE")
+            l = int(input("Length : "))
+            w = int(input("Width : "))
+            perimeter = 2 * (l + w)
+            print("Perimeter of Rectangle : ", perimeter)
+
         elif ch == '4':
             print("YOU CHOOSE TRIANGLE")
+            a = int(input("Side 1 : "))
+            b = int(input("Side 2 : "))
+            c = int(input("Side 3 : "))
+            perimeter = a + b + c
+            print("Perimeter of Triangle : ", perimeter)
+
         elif ch == '5':
             print("....YOU ARE EXITED.....")
             break
+
     elif choice == '2':
         print("you choose area")
         print("-------------------------")
@@ -45,6 +65,7 @@ while True:
         print("5.EXIT")
         print("--------------------------")
         choice = input("WHICH SHAPE DO YOU WANT")
+
         while True:
             if choice == '1':
                 print(" YOU CHOOSE CIRCLE")
@@ -53,7 +74,7 @@ while True:
                 circle_area = pi * r * r
                 print(f"The area of circle is {circle_area}.")
                 print("--------------------------------------")
-                input("DO YOU WANT TO CONTINUE")
+                #input("DO YOU WANT TO CONTINUE")
                 #continue
 
             elif choice == '2':
